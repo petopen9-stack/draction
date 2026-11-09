@@ -1,0 +1,27 @@
+name: draction
+version: 0.1.0
+description: Durable, resumable, checkpointed actions for Hermes. Turn ephemeral agent runs into reliable long-running workflows with human gates and verifiable receipts.
+author: petopen9
+license: MIT
+homepage: https://github.com/petopen9-stack/draction
+requires_hermes: ">=0.22.0"
+
+# What this plugin exposes
+provides_tools:
+  - draction_create
+  - draction_list
+  - draction_status
+  - draction_resume
+  - draction_approve
+  - draction_cancel
+  - draction_history
+
+# Optional: declare any privileged surfaces (none needed for v0.1)
+capabilities: []
+
+# Python deps (kept minimal)
+python_dependencies:
+  - pyyaml>=6.0
+
+# Optional skill that ships with the plugin
+# (registered in code via ctx.register_skill)
