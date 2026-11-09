@@ -1,0 +1,21 @@
+name: draction
+repo: https://github.com/petopen9-stack/draction
+sha: a7be73edd3a2e9c35bc4f20751e5f8bde0069baf
+description: Durable, resumable, checkpointed actions with human-approval gates and verifiable hash-chained receipts. Turn ephemeral agent runs into reliable long-running workflows.
+maintainer: petopen9-stack
+tier: community
+version: "0.1.0"
+requires_hermes: ">=0.22.0"
+
+capabilities:
+  provides_tools:
+    - draction_create
+    - draction_list
+    - draction_status
+    - draction_resume
+    - draction_approve
+    - draction_cancel
+    - draction_history
+  provides_hooks: []
+  provides_middleware: []
+  requires_env: []
